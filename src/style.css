@@ -1,0 +1,15 @@
+.todo {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  border-radius: 5px;
+}
+.todo.high {
+  background-color: #ffcccc;
+}
+.todo.medium {
+  background-color: #fff4cc;
+}
+.todo.low {
+  background-color: #ccffcc;
+}
