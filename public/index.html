@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input, select, button {
+      margin: 4px;
+      padding: 6px;
+    }
+
+    #project-list button {
+      margin-right: 6px;
+      padding: 6px 10px;
+    }
+
+    .todo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 6px 0;
+      border-left: 5px solid;
+    }
+
+    .todo.Low {
+      border-color: green;
+    }
+
+    .todo.Medium {
+      border-color: orange;
+    }
+
+    .todo.High {
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Todo App</h1>
+
+  <!-- Project Section -->
+  <div id="project-list"></div>
+
+  <form id="new-project-form">
+    <input type="text" name="projectName" placeholder="New Project Name" required />
+    <button type="submit">Add Project</button>
+  </form>
+
+  <!-- Todo Section -->
+  <form id="new-todo-form">
+    <input type="text" name="title" placeholder="Title" required />
+    <input type="text" name="description" placeholder="Description" />
+    <input type="date" name="dueDate" />
+    <select name="priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <input type="text" name="notes" placeholder="Notes" />
+    <input type="text" name="checklist" placeholder="Checklist (comma-separated)" />
+    <button type="submit">Add Todo</button>
+  </form>
+
+  <!-- Todo Display List -->
+  <div id="todo-list"></div>
+
+</body>
+</html>
